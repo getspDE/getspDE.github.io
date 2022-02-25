@@ -1,0 +1,14 @@
+#!/bin/sh
+
+curl -o main.zip https://codeload.github.com/speediegamer/spDE/zip/refs/heads/main
+
+unzip main.zip
+cd spDE-main && chmod +x install.sh && cd spDE-main
+clear
+
+echo "After the install is complete, you will NEED to install:"
+echo "- Optional: Display Manager"
+echo "- Xorg Server"
+echo "- Xinit"
+echo
+echo "Run cd spDE-main && ./install.sh to start installing spDE!"
