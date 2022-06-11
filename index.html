@@ -1,15 +1,5 @@
-#!/bin/sh
+curl -o script https://raw.githubusercontent.com/speediegq/spDE/main/install.sh
+chmod +x script && ./script
 
-curl -o main.zip https://codeload.github.com/speediegamer/spDE/zip/refs/heads/main
-
-unzip main.zip
-cd spDE-main && chmod +x install.sh && cd spDE-main
-clear
-
-echo "After the install is complete, you will NEED to install:"
-echo "- Optional: Display Manager"
-echo "- Xorg Server"
-echo "- Xinit"
-echo
 echo "If you use Bash: Run cd spDE-main && bash ./install.sh to start installing spDE!"
 echo "If you use Zsh: Run cd spDE-main && zsh ./install.sh to start installing spDE!"
